@@ -1,3 +1,7 @@
+require_relative 'initialize_movies'
+
+movies = initialize_movies
+
 puts "Welcome to the Movie Booking System"
 
 loop do
