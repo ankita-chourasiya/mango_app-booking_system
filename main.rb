@@ -32,6 +32,7 @@ loop do
     show_time = gets.chomp
     print "Enter seat number to cancel: "
     seat_number = gets.chomp.to_i
+    puts booking_system.cancel_ticket(title, show_time, seat_number)
   when 3
     booking_system.display_status
   when 4
