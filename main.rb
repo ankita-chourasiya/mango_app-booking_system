@@ -1,6 +1,8 @@
 require_relative 'initialize_movies'
+require_relative 'lib/booking_system'
 
 movies = initialize_movies
+booking_system = BookingSystem.new(movies)
 
 puts "Welcome to the Movie Booking System"
 
@@ -30,7 +32,7 @@ loop do
     print "Enter seat number to cancel: "
     seat_number = gets.chomp.to_i
   when 3
-    puts "Display status"
+    booking_system.display_status
   when 4
     puts "Thank you for using the Movie Booking System."
     break
