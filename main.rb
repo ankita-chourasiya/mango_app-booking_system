@@ -24,6 +24,7 @@ loop do
     show_time = gets.chomp
     print "Enter number of tickets: "
     num_of_tickets = gets.chomp.to_i
+    puts booking_system.book_ticket(title, show_time, num_of_tickets)
   when 2
     print "Enter movie title: "
     title = gets.chomp

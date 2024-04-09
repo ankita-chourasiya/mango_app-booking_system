@@ -1,4 +1,5 @@
 require_relative '../initializer/movie'
+require_relative 'ticket_booking'
 require_relative 'status_display'
 
 class BookingSystem
@@ -6,6 +7,10 @@ class BookingSystem
 
   def initialize(movies)
     @movies = movies
+  end
+
+  def book_ticket(title, show_time, num_of_tickets)
+    TicketBooking.book_ticket(@movies, title, show_time, num_of_tickets)
   end
 
   def display_status
