@@ -1,23 +1,13 @@
+require 'json'
 require_relative 'initializer/movie'
 require_relative 'initializer/show'
 
 def initialize_movies
-  [
-    Movie.new("Pathaan", "Action", [
-      Show.new("1:00 PM", 200, []),
-      Show.new("4:00 PM", 200, [])
-    ]),
-    Movie.new("Brahmāstra", "Fantasy", [
-      Show.new("6:00 PM", 200, []),
-      Show.new("9:00 PM", 200, [])
-    ]),
-    Movie.new("Gangubai Kathiawadi", "Biographical", [
-      Show.new("2:00 PM", 150, []),
-      Show.new("5:00 PM", 150, [])
-    ]),
-    Movie.new("RRR", "Epic", [
-      Show.new("7:00 PM", 250, []),
-      Show.new("10:00 PM", 250, [])
-    ])
-  ]
+  file_path = 'movies_data.json' # Update this to the correct path
+  movie_data = JSON.parse(File.read(file_path))
+
+  movie_data.map do |movie_hash|
+    shows = movie_hash["shows"].map { |show_time, capacity| Show.new(show_time, capacity, []) }
+    Movie.new(movie_hash["title"], movie_hash["genre"], shows)
+  end
 end

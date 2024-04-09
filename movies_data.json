@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Pathaan",
+    "genre": "Action",
+    "shows": [
+      ["1:00 PM", 200],
+      ["4:00 PM", 200]
+    ]
+  },
+  {
+    "title": "Brahmāstra",
+    "genre": "Fantasy",
+    "shows": [
+      ["6:00 PM", 200],
+      ["9:00 PM", 200]
+    ]
+  },
+  {
+    "title": "Gangubai Kathiawadi",
+    "genre": "Biographical",
+    "shows": [
+      ["2:00 PM", 150],
+      ["5:00 PM", 150]
+    ]
+  },
+  {
+    "title": "RRR",
+    "genre": "Epic",
+    "shows": [
+      ["7:00 PM", 250],
+      ["10:00 PM", 250]
+    ]
+  },
+  {
+    "title": "KGF Chapter 2",
+    "genre": "Action",
+    "shows": [
+      ["12:00 PM", 200],
+      ["3:00 PM", 200]
+    ]
+  },
+  {
+    "title": "Joker",
+    "genre": "Drama",
+    "shows": [
+      ["1:30 PM", 150],
+      ["4:30 PM", 150]
+    ]
+  },
+  {
+    "title": "Inception",
+    "genre": "Sci-Fi",
+    "shows": [
+      ["6:30 PM", 200],
+      ["9:30 PM", 200]
+    ]
+  },
+  {
+    "title": "Avengers: Endgame",
+    "genre": "Superhero",
+    "shows": [
+      ["3:30 PM", 250],
+      ["7:00 PM", 250]
+    ]
+  },
+  {
+    "title": "The Godfather",
+    "genre": "Crime",
+    "shows": [
+      ["2:00 PM", 100],
+      ["5:00 PM", 100]
+    ]
+  },
+  {
+    "title": "Interstellar",
+    "genre": "Sci-Fi",
+    "shows": [
+      ["8:00 PM", 200],
+      ["11:00 PM", 200]
+    ]
+  }
+]
